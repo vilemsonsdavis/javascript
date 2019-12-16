@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+	</head>
+	
+		<script type="text/javascript">
+		
+			function people(name, age) {
+				this.name = name;
+				this.age = age;
+				this.years_till_retirement = years_till_retirement; <!-- in javascript we have to declare methods for object like this -->
+			}
+			
+			function years_till_retirement() {
+				var years = 65 - this.age;
+				return years;
+			}
+			
+			var natalie = new people("Natalie Portman", 28);
+			
+		</script>
+		
+	<head>
+	<body>
+
+		<script type="text/javascript">
+
+			document.write(natalie.name + " have to wait " + natalie.years_till_retirement() + " till retirement!");
+
+		</script>
+
+	</body>
+</html>
